@@ -5,3 +5,22 @@ li >a{
   
 
 }
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* You can change the color */
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+    font-size: 18px;
+  }
+  
+  #back-to-top:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
