@@ -23,4 +23,50 @@ li >a{
   #back-to-top:hover {
     background-color: #0056b3; /* Darker shade on hover */
   }
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+  }
   
+  .image-container img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .overlay {
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(3, 8, 26, 0.917); /* Background color with opacity */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container:hover .overlay {
+    transform: translateY(0);
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    font-size: 16px;
+    left: 20px;
+    right: 20px;
+    top: 12px;
+    text-align: start;
+    padding: 5px;
+  }
+  
+  .image-title {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
